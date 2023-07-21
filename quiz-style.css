@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+  } 
+  
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+  } 
+  
+  form {
+    display: block;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    width: 70%;  
+    border-radius: 5px 0 0 5px; 
+    margin-bottom: 20px;
+  } 
+
+  input[type="number"] {
+    padding: 10px;
+    width: 70%;  
+    border-radius: 5px 0 0 5px; 
+    margin-bottom: 20px;
+  } 
+
+  input[type="radio"] {
+    border-radius: 5px 0 0 5px; 
+    margin-bottom: 20px;
+  } 
+
+  button {
+    padding: 10px 20px;  
+    background-color: #007bff;
+    color: #fff;  
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #quiz-questions {
+      text-align: center;
+  }
+
+  .dropbtn {
+      background-color: #3498DB;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {  
+    background-color: #2980B9;  
+  }
+  #quiz-container {
+    position: relative; /* Make the container relative for absolute positioning */
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  #error-message
+  {
+   color: red;
+  }
+  
+  
+ 
+  
+
+ 
+  
+  #resultMessage {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Style for the correct result message */
+  #resultMessage.correct {
+    color: green;
+    font-weight: bold;
+
+  }
+  
+  /* Style for the incorrect result message */
+  #resultMessage.incorrect {
+    color: red;
+    font-weight: bold;
+
+  }
+  #nextButton,
+#submitButton {
+  display: inline-block;
+  
+    margin-top: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #nextButton {
+    background-color: blue;
+    color: white;
+  }
+  
+  #submitButton {
+    background-color: blue;
+    color: white;
+  }
+  
+  #nextButton:hover,
+  #submitButton:hover {
+    opacity: 0.8;
+  }
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  #timer {
+    font-weight: bold;
+  }
+  
+  #timer-countdown {
+    font-size: 20px;
+    margin-left: 5px; /* Add some left margin to separate from the "Time Left" text */
+  }
+ 
+
+
+
+
+
+  
+
+
+   
+  
+  
+  

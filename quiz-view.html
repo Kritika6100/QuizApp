@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz App</title>
+  <link rel="stylesheet" type="text/css" href="quiz-style.css">
+  
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>Quiz App</h1>
+    <form id="registration-form">
+      <input type="text" id="user-name" placeholder="UserName">
+      <input type="text" id="email" placeholder="Email">
+      <div id="categorys">Select Category</div>
+        <br/>
+        <input type="radio" id="film" name="category" value="11">
+        <label for="film">Entertainment: Film</label><br>
+        <input type="radio" id="book" name="category" value="10">
+        <label for="book">Entertainment: Books</label><br>
+        <input type="radio" id="art" name="category" value="25">
+        <label for="art">Art</label> <br/>
+        <input type="radio" id="geo" name="category" value="22">
+        <label for="geo">Geography</label>
+        <br/>
+      <input type="number" id="number-question" placeholder="Select number of questions">
+      <br/>
+     
+      <input type="radio" id="easy" name="level" value="easy">
+      <label for="easy">Easy</label><br>
+      <input type="radio" id="medium" name="level" value="medium">
+      <label for="medium">Medium</label><br>
+      <input type="radio" id="hard" name="level" value="hard">
+      <label for="hard">Hard</label>
+      <br/>
+      <button onclick="validate()">
+        Register</button>
+        <span id="error-message"></span>
+        <div id="error-block"></div>
+      
+      
+
+    </form>
+    
+      
+    
+
+    
+      
+    <div id="quiz-container" style="display: none;">
+      <div id="question-container">
+        
+        <span id="questionID"></span>
+
+        <div id="optionsContainer"></div>
+        <!--
+        <input type="radio" name="answer" id="option_0" value="option_0">
+        <label for="option_0">Option 0</label><br>
+        <input type="radio" name="answer" id="option_1"value="option_1">
+        <label for="option_1">Option 1</label><br>
+        <input type="radio" name="answer" id="option_2"value="option_2">
+        <label for="option_2">Option 2</label><br>
+        <input type="radio" name="answer" id="option_corr"value="option_corr">
+        <label for="option_corr">Option correct</label><br>
+        -->
+        </div>
+        
+        
+        <div id="header">
+        <div id="timer">Time Left: <span id="timer-countdown">20</span> seconds</div>
+        </div>
+
+        <div id="buttonsContainer">
+          <button id="nextButton" type="button" onclick="handleNextButtonClick()">Next</button>
+          <button id="submitButton" type="button" onclick="submitQuiz()">Submit</button>
+        </div>
+      <div id="resultMessage"></div>
+      <div id="error-block"></div>
+      
+
+      </div>
+      
+      
+      
+
+    
+    
+        
+    
+
+
+   <script src="quiz.js"></script>
+
+</body>
+</html>
+
